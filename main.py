@@ -51,7 +51,6 @@ print(f'Test Accuracy: {accuracy * 100:.2f}%')
 
 
 def visualize_predictions(x_test, y_test, predictions, num_images=10):
-    # Chọn ngẫu nhiên một số hình ảnh để trực quan hóa
     indices = np.random.choice(len(x_test), num_images, replace=False)
 
     plt.figure(figsize=(10, 2 * num_images))
@@ -71,5 +70,4 @@ def visualize_predictions(x_test, y_test, predictions, num_images=10):
     plt.show()
 
 
-# Sử dụng hàm để trực quan hóa dự đoán
 visualize_predictions(x_test, y_test, predictions, num_images=5)
